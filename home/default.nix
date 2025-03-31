@@ -1,6 +1,7 @@
 {
   imports = [
     ./hyprland
+    ./kitty
   ];
 
   home.stateVersion = "24.11";
