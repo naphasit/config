@@ -3,7 +3,7 @@
 {
   programs.kitty = {
     enable = true;
-    settings = with config.design.color; {
+    settings = {
       background = "#151515";
       foreground = "#eeeeee";
       selection_foreground = "#151515";
@@ -29,6 +29,12 @@
       cursor = "#eeeeee";
       cursor_shape = "beam";
       cursor_trail = 1;
+
+      font_family = "Adwaita Mono";
+      bold_font = "auto";
+      italic_font = "auto";
+      bold_italic_font = "auto";
+
 
       confirm_os_window_close = 0;
     };
