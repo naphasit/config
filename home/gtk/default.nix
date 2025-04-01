@@ -1,6 +1,18 @@
 { pkgs, ... }:
 
 {
+  xdg.portal = {
+    xdgOpenUsePortal = true;
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
+
   home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.adwaita-icon-theme;
