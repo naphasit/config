@@ -9,12 +9,17 @@
     ./floorp
   ];
 
-  home.persistence."/persist/home" = {
+  home.persistence."/persist/home/naphasitng" = {
+    allowOther = true;
     directories = [
       ".floorp"
       ".mozilla"
+      ".steam/steam"
+      {
+        directory = ".local/share/Steam";
+        method = "symlink";
+      }
     ];
-    allowOther = true;
   };
 
   home.stateVersion = "24.11";
