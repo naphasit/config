@@ -1,4 +1,4 @@
-{ home-manager, ... }:
+{ inputs, home-manager, ... }:
 
 {
   users.users."naphasitng" = {
@@ -7,5 +7,9 @@
     hashedPasswordFile = "/persist/passwords/naphasitng";
   };
 
-  home-manager.users."naphasitng" = ../home;
+  programs.fuse.userAllowOther = true;
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users."naphasitng" = ../home;
+  };
 }

@@ -16,4 +16,9 @@
       { file = "/var/keys/secret_file"; parentDirectory = { mode = "u=rwx,g=,o="; }; }
     ];
   };
+
+  systemd.tmpfiles.rules = [
+    "d /persist/home/ 1777 root root -"
+    "d /persist/home/naphasitng 0770 naphasitng users -"
+  ];
 }
