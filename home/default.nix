@@ -4,6 +4,7 @@
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./hyprland
+    ./kitty
   ];
 
   home.persistence."/persist/home/naphasitng" = {
