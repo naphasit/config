@@ -3,6 +3,7 @@
 {
   imports = [
     inputs.impermanence.nixosModules.home-manager.impermanence
+    ./hyprland
   ];
 
   home.persistence."/persist/home/naphasitng" = {

@@ -4,6 +4,7 @@
     ./locale.nix
     ./persist.nix
     ./users.nix
+    ./software.nix
   ];
 
   nix.gc = {
