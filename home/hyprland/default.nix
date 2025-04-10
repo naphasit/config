@@ -6,10 +6,10 @@
     settings = {
       monitor = ", preferred, auto, 1.2";
 
-      env = [
+      /*env = [
         "XCURSOR_SIZE, 24"
         "XCURSOR_THEME, Adwaita"
-      ];
+      ];*/
 
       exec-once = "ags run --gtk4";
 

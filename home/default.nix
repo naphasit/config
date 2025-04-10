@@ -5,6 +5,8 @@
     inputs.impermanence.nixosModules.home-manager.impermanence
     ./hyprland
     ./kitty
+    ./xdg
+    ./gtk
   ];
 
   home.persistence."/persist/home/naphasitng" = {
