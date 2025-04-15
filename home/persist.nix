@@ -6,7 +6,9 @@
   ];
 
   home.persistence."/persist/home/naphasitng" = {
-    directories = [];
+    directories = [
+      ".mozilla"
+    ];
     allowOther = true;
   };
 }
