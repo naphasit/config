@@ -1,15 +1,6 @@
-{ config, lib, pkgs, ... }:
+{ lib, ... }:
 
 {
-  imports = [
-    ./hardware.nix
-  ];
-
-  boot.loader.grub.devices = [ "nodev" ];
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.efiInstallAsRemovable = true;
-
   boot.initrd.postDeviceCommands = lib.mkAfter ''
     mkdir /btrfs_tmp
     mount /dev/nvme0n1p2 /btrfs_tmp
@@ -52,19 +43,4 @@
       { file = "/var/keys/secret_file"; parentDirectory = { mode = "u=rwx,g=,o="; }; }
     ];
   };
-
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
-
-  time.timeZone = "Asia/Bangkok";
-
-  users.users.naphasitng = {
-    isNormalUser = true;
-    hashedPasswordFile = "/persist/passwords/naphasitng";
-    extraGroups = [ "wheel" ];
-  };
-
-  system.stateVersion = "24.11";
-
 }
-

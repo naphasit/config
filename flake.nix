@@ -18,12 +18,12 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./configuration.nix
+        ./system
               
         # inputs.home-manager.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.disko.nixosModules.default
-        (import ./disko.nix { device = "/dev/nvme0n1"; })	
+        (import ./system/disko.nix { device = "/dev/nvme0n1"; })	
       ];
     };
   };
