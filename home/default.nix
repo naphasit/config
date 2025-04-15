@@ -4,6 +4,7 @@
   imports = [
     ./persist.nix
     ./gtk.nix
+    ./xdg.nix
     ./hyprland.nix
     ./kitty.nix
   ];
