@@ -7,6 +7,8 @@
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
 
+    hardware.url = "github:NixOS/nixos-hardware";
+
     impermanence.url = "github:nix-community/impermanence";
 
     home-manager.url = "github:nix-community/home-manager";
@@ -21,7 +23,8 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./system
-              
+
+	inputs.hardware.nixosModules.asus-fx506hm
         inputs.home-manager.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.disko.nixosModules.default
