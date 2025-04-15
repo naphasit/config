@@ -3,6 +3,7 @@
 {
   imports = [
     ./persist.nix
+    ./hyprland.nix
   ];
 
   programs.home-manager.enable = true;
