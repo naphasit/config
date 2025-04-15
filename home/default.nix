@@ -3,6 +3,7 @@
 {
   imports = [
     ./persist.nix
+    ./gtk.nix
     ./hyprland.nix
     ./kitty.nix
   ];
