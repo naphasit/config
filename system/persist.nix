@@ -26,6 +26,11 @@
     umount /btrfs_tmp
   '';
 
+  systemd.tmpfiles.rules = [
+    "d /persist/home 0777 root root -"
+    "d /persist/home/naphasitng 0700 naphasitng users -"
+  ];
+
   fileSystems."/persist".neededForBoot = true;
   environment.persistence."/persist/system" = {
     hideMounts = true;

@@ -9,8 +9,8 @@
 
     impermanence.url = "github:nix-community/impermanence";
 
-    # home-manager.url = "github:nix-community/home-manager";
-    # home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {nixpkgs, ...} @ inputs:
@@ -20,7 +20,7 @@
       modules = [
         ./system
               
-        # inputs.home-manager.nixosModules.default
+        inputs.home-manager.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.disko.nixosModules.default
         (import ./system/disko.nix { device = "/dev/nvme0n1"; })	
