@@ -8,6 +8,7 @@
     ./hyprland.nix
     ./kitty.nix
     ./firefox.nix
+    ./software.nix
   ];
 
   programs.home-manager.enable = true;
