@@ -9,6 +9,7 @@
     directories = [
       ".mozilla"
       "Games"
+      "Codes"
       ".local/share/PrismLauncher"
     ];
     allowOther = true;
