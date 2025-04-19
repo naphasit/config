@@ -11,6 +11,7 @@
       "Games"
       "Codes"
       ".local/share/PrismLauncher"
+      { directory = ".local/share/Steam"; method = "symlink"; }
     ];
     allowOther = true;
   };
