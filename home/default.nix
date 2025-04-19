@@ -7,7 +7,7 @@
     ./xdg.nix
     ./hyprland.nix
     ./kitty.nix
-    ./firefox.nix
+    ./firefox
     ./software.nix
   ];
 
