@@ -8,6 +8,8 @@
 
       exec-once = "ags run --gtk4";
 
+      "xwayland:force_zero_scaling" = true;
+
       general = {
         gaps_in = 4;
      	gaps_out = 8;
