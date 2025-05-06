@@ -3,7 +3,7 @@
 {
   security.polkit.enable = true;
   environment.systemPackages = with pkgs; [
-     pkgs.polkit_gnome
+    pkgs.polkit_gnome
   ];
 
   systemd = {
