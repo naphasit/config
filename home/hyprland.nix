@@ -6,7 +6,10 @@
     settings = {
       monitor = ", preferred, auto, 1.2";
 
-      exec-once = "ags run --gtk4";
+      exec-once = [
+		"ags run --gtk4"
+		systemctl start --user polkit-gnome-authentication-agent-1
+	  ];
 
       "xwayland:force_zero_scaling" = true;
 
