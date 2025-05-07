@@ -8,6 +8,7 @@
     ./hyprland.nix
     ./kitty.nix
     ./firefox
+    ./ags
     ./software.nix
   ];
 

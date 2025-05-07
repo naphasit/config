@@ -1,0 +1,20 @@
+@use "./variables.scss" as *;
+@use 'sass:color';
+
+* {
+  color: $foreground;
+  font-weight: 600;
+  transition-duration: 200ms;
+}
+
+gui {
+  background: $background;
+  border: $border;
+  button {
+    background: $background;
+    border: none;
+    &:hover {
+      background: color.adjust($background, $lightness: 10%);
+    }
+  }
+}

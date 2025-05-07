@@ -1,10 +1,14 @@
 import { App } from "astal/gtk4"
-import style from "./style.scss"
-import Bar from "./widget/Bar"
+import style from "./styles/default.scss"
+import Bar from "./widgets/Bar/Index"
+
+const widgets = [
+    Bar
+]
 
 App.start({
     css: style,
     main() {
-        App.get_monitors().map(Bar)
+        widgets.map((widget) => App.get_monitors().map(widget));
     },
 })
