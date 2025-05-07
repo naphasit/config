@@ -18,8 +18,8 @@
      		gaps_out = 8;
     		border_size = 2;
 
-    		"col.active_border" = "rgba(ffffffee)";
-    		"col.inactive_border" = "rgba(ffffffcc)";
+    		"col.active_border" = "rgb(2f2f2f)";
+    		"col.inactive_border" = "rgb(2f2f2f)";
 
     		allow_tearing = true;
     		layout = "dwindle";
@@ -33,7 +33,7 @@
     	inactive_opacity = 1;
 
     	shadow = {
-        enabled = true;
+        enabled = false;
         range = 4;
         render_power = 3;
         color = "rgba(1a1a1aee)";
