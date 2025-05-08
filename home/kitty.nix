@@ -9,6 +9,8 @@
       selection_foreground = "#151515";
       selection_background = "#eeeeee";
 
+      window_margin_width = 8;
+
       color0 = "#151515";
       color8 = "#353535";
       color1 = "#aa1818";
