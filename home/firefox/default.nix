@@ -17,4 +17,10 @@
     recursive = true;
     force = true;
   };
+
+  home.file.".mozilla/firefox/napasitng/chrome" = {
+    source = ./chrome;
+    recursive = true;
+    force = true;
+  };
 }
