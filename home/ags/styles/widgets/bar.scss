@@ -50,11 +50,11 @@
         }
 
         separator {
-          background: color.adjust($background, $lightness: 10%);
+          background: $container;
         }
 
         modelbutton:hover {
-          background: color.adjust($background, $lightness: 10%);
+          background: $container;
         }
       }
     }

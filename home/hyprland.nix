@@ -18,8 +18,8 @@
      		gaps_out = 8;
     		border_size = 2;
 
-    		"col.active_border" = "rgb(2f2f2f)";
-    		"col.inactive_border" = "rgb(2f2f2f)";
+    		"col.active_border" = "rgba(70707040)";
+    		"col.inactive_border" = "rgba(70707040)";
 
     		allow_tearing = true;
     		layout = "dwindle";
@@ -41,8 +41,10 @@
 
     	blur = {
         enabled = true;
-        size = 3;
-        passes = 1;
+        size = 2;
+        passes = 6;
+        noise = 0.0117;
+        contrast = 0.97;
 
         vibrancy = 0;
     	};
@@ -147,6 +149,11 @@
 				"suppressevent maximize, class:.*"
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+
+			layerrule = [
+				"blur, gtk4-layer-shell"
+				"ignorezero, gtk4-layer-shell"
+			];
     };
   };
 }

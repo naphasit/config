@@ -1,18 +1,18 @@
 @-moz-document url(chrome://browser/content/browser.xul),
                url(chrome://browser/content/browser.xhtml) {
   :root {
-    --toolbox-bgcolor: #151515 !important;
-    --toolbox-bgcolor-inactive: #151515 !important;
+    --toolbox-bgcolor: #15151540 !important;
+    --toolbox-bgcolor-inactive: #15151540 !important;
     --toolbox-textcolor: #eeeeee !important;
     --toolbox-textcolor-inactive: #eeeeee !important;
-    --tabpanel-background-color: #151515 !important;
-    --toolbar-field-background-color: #151515 !important;
+    --tabpanel-background-color: #15151540 !important;
+    --toolbar-field-background-color: #15151540 !important;
     --toolbar-field-focus-background-color: #2f2f2f !important;
     --toolbar-field-focus-color: #eeeeee !important;
     --toolbarbutton-hover-background: #2f2f2f !important;
     --toolbarbutton-active-background: ;
     --toolbarbutton-icon-fill: #eeeeee !important;
-    --arrowpanel-background: #151515 !important;
+    --arrowpanel-background: #15151540 !important;
     --arrowpanel-color: #eeeeee !important;
     --arrowpanel-border-color: #2f2f2f !important;
     --arrowpanel-border-radius: 10px !important;
