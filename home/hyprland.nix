@@ -112,7 +112,7 @@
 				"$mod, M, exit"
 				"$mod, E, exec, $FileManager" # Add File Manager Later
 				"$mod, V, togglefloating"
-				"$mod, R, exec, $menu" # Add Menu Later
+				"$mod, R, exec, ags toggle AppLauncher"
 				"$mod, F, fullscreen"
 				"$mod, J, togglesplit"
 
@@ -151,8 +151,10 @@
       ];
 
 			layerrule = [
-				"blur, gtk4-layer-shell"
-				"ignorezero, gtk4-layer-shell"
+				"blur, Bar"
+				"ignorezero, Bar"
+				"blur, AppLauncher"
+				"ignorezero, AppLauncher"
 			];
     };
   };

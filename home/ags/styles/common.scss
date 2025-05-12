@@ -1,5 +1,5 @@
 @use "./variables.scss" as *;
-@use 'sass:color';
+@use "sass:color";
 
 * {
   color: $foreground;
@@ -16,5 +16,12 @@ gui {
     &:hover {
       background: $container;
     }
+  }
+}
+
+window {
+  background: transparent;
+  .popupMargin {
+    opacity: 0;
   }
 }
