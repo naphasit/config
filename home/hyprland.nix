@@ -26,28 +26,28 @@
       };
 
       decoration = {
-    	rounding = 16;
-    	rounding_power = 2;
+    		rounding = 24;
+    		rounding_power = 2;
 
-    	active_opacity = 1;
-    	inactive_opacity = 1;
+    		active_opacity = 1;
+    		inactive_opacity = 1;
 
-    	shadow = {
-        enabled = false;
-        range = 4;
-        render_power = 3;
-        color = "rgba(1a1a1aee)";
-    	};
+    		shadow = {
+        	enabled = false;
+        	range = 4;
+        	render_power = 3;
+        	color = "rgba(1a1a1aee)";
+    		};
 
-    	blur = {
-        enabled = true;
-        size = 2;
-        passes = 6;
-        noise = 0.0117;
-        contrast = 0.97;
+    		blur = {
+        	enabled = true;
+        	size = 2;
+        	passes = 6;
+        	noise = 0.0117;
+        	contrast = 0.97;
 
-        vibrancy = 0;
-    	};
+        	vibrancy = 0;
+    		};
       };
 
       animations = {
