@@ -1,4 +1,5 @@
 import { bind, Variable } from "astal";
+import { App } from "astal/gtk4";
 import Battery from "gi://AstalBattery";
 import Network from "gi://AstalNetwork";
 import Wp from "gi://AstalWp";
@@ -31,7 +32,7 @@ export default function Status() {
   );
 
   return (
-    <button cssClasses={["Status"]}>
+    <button cssClasses={["Status"]} onClicked={() => App.toggle_window("QuickSettings")}>
       <box spacing={4}>
         <image iconName={icon()} onDestroy={() => icon.drop()} />
         <image iconName={bind(speaker, "volumeIcon")} />

@@ -16,5 +16,7 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    brightnessctl
+  ];
 }

@@ -13,8 +13,26 @@ gui {
   button {
     background: transparent;
     border: none;
+    border-radius: 16px;
     &:hover {
       background: $container;
+    }
+  }
+  scale {
+    padding: 0;
+    trough {
+      background: $container;
+      min-height: 16px;
+      border: none;
+      border-radius: 16px;
+      highlight {
+        background-color: $foreground;
+        min-height: 8px;
+        border-radius: 16px;
+      }
+      slider {
+        opacity: 0;
+      }
     }
   }
 }

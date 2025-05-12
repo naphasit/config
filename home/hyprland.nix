@@ -155,6 +155,8 @@
 				"ignorezero, Bar"
 				"blur, AppLauncher"
 				"ignorezero, AppLauncher"
+				"blur, QuickSettings"
+				"ignorezero, QuickSettings"
 			];
     };
   };
