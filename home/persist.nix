@@ -1,9 +1,7 @@
 { inputs, ... }:
 
 {
-  imports = [
-    inputs.impermanence.nixosModules.home-manager.impermanence
-  ];
+  imports = [ inputs.impermanence.nixosModules.home-manager.impermanence ];
 
   home.persistence."/persist/home/naphasitng" = {
     directories = [
@@ -11,7 +9,10 @@
       "Games"
       "Codes"
       ".local/share/PrismLauncher"
-      { directory = ".local/share/Steam"; method = "symlink"; }
+      {
+        directory = ".local/share/Steam";
+        method = "symlink";
+      }
     ];
     allowOther = true;
   };

@@ -6,7 +6,8 @@
   programs.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
   };
 
   programs.steam = {
@@ -16,7 +17,5 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    brightnessctl
-  ];
+  environment.systemPackages = with pkgs; [ brightnessctl ];
 }

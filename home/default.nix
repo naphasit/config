@@ -1,5 +1,3 @@
-{ inputs, ... }:
-
 {
   imports = [
     ./persist.nix

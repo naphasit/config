@@ -1,6 +1,6 @@
 {
   description = "Nixos config flake";
-     
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
@@ -22,18 +22,17 @@
     firefox-addons.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = {nixpkgs, ...} @ inputs:
-  {
+  outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
+      specialArgs = { inherit inputs; };
       modules = [
         ./system
 
-	inputs.hardware.nixosModules.asus-fx506hm
+        inputs.hardware.nixosModules.asus-fx506hm
         inputs.home-manager.nixosModules.default
         inputs.impermanence.nixosModules.impermanence
         inputs.disko.nixosModules.default
-        (import ./system/disko.nix { device = "/dev/nvme0n1"; })	
+        (import ./system/disko.nix { device = "/dev/nvme0n1"; })
       ];
     };
   };

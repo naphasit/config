@@ -5,9 +5,9 @@
     enable = true;
     profiles = {
       napasitng = {
-	      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
-          ublock-origin
-        ];
+        extensions.packages =
+          with inputs.firefox-addons.packages."x86_64-linux";
+          [ ublock-origin ];
       };
     };
   };

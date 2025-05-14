@@ -2,9 +2,7 @@
 
 {
   security.polkit.enable = true;
-  environment.systemPackages = with pkgs; [
-    pkgs.polkit_gnome
-  ];
+  environment.systemPackages = with pkgs; [ pkgs.polkit_gnome ];
 
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
@@ -14,7 +12,8 @@
       after = [ "graphical-session.target" ];
       serviceConfig = {
         Type = "simple";
-        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+        ExecStart =
+          "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
         Restart = "on-failure";
         RestartSec = 1;
         TimeoutStopSec = 10;
