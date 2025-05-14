@@ -10,6 +10,6 @@
   programs.fuse.userAllowOther = true;
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users.naphasitng = import ../home;
+    users.naphasitng = import ./home.nix;
   };
 }
