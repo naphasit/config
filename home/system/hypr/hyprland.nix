@@ -91,7 +91,8 @@
       };
 
       input = {
-        kb_layout = "us";
+        kb_layout = "us, th";
+	kb_options =  "grp:alt_space_toggle";
         follow_mouse = 1;
         sensitivity = 0;
         touchpad = { natural_scroll = false; };
