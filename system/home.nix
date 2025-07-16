@@ -7,7 +7,6 @@
     ../home/system/hypr
     ../home/system/xdg
     ../home/system/gtk
-    ../home/system/ags
 
     ../home/software/firefox
     ../home/software/kitty
