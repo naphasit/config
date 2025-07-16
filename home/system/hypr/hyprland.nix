@@ -17,8 +17,8 @@
         gaps_out = 8;
         border_size = 2;
 
-        "col.active_border" = "rgba(70707040)";
-        "col.inactive_border" = "rgba(70707040)";
+        "col.active_border" = "rgba(ffffff20)";
+        "col.inactive_border" = "rgba(ffffff20)";
 
         allow_tearing = true;
         layout = "dwindle";

@@ -1,27 +1,27 @@
 @-moz-document url(chrome://browser/content/browser.xul),
                url(chrome://browser/content/browser.xhtml) {
   :root {
-    --toolbox-bgcolor: #15151540 !important;
-    --toolbox-bgcolor-inactive: #15151540 !important;
+    --toolbox-bgcolor: #ffffff10 !important;
+    --toolbox-bgcolor-inactive: #ffffff10 !important;
     --toolbox-textcolor: #eeeeee !important;
     --toolbox-textcolor-inactive: #eeeeee !important;
-    --tabpanel-background-color: #15151540 !important;
-    --toolbar-field-background-color: #15151540 !important;
-    --toolbar-field-focus-background-color: #2f2f2f !important;
+    --tabpanel-background-color: tranparent !important;
+    --toolbar-field-background-color: #ffffff10 !important;
+    --toolbar-field-focus-background-color: #ffffff10 !important;
     --toolbar-field-focus-color: #eeeeee !important;
-    --toolbarbutton-hover-background: #2f2f2f !important;
+    --toolbarbutton-hover-background: #ffffff10 !important;
     --toolbarbutton-active-background: ;
     --toolbarbutton-icon-fill: #eeeeee !important;
-    --arrowpanel-background: #15151540 !important;
+    --arrowpanel-background: #ffffff10 !important;
     --arrowpanel-color: #eeeeee !important;
-    --arrowpanel-border-color: #2f2f2f !important;
+    --arrowpanel-border-color: #ffffff10 !important;
     --arrowpanel-border-radius: 10px !important;
     --border-radius-medium: 10px !important;
     --arrowpanel-menuitem-border-radius: 16px !important;
     --panel-border-radius: 24px !important;
     --toolbarbutton-border-radius: 10px !important;
-    --toolbar-field-border-color: #2f2f2f !important;
-    --tab-selected-bgcolor: #2f2f2f !important;
+    --toolbar-field-border-color: #ffffff10 !important;
+    --tab-selected-bgcolor: #fffffff10 !important;
   }
 
   #urlbar-background, #searchbar, .tab-background {

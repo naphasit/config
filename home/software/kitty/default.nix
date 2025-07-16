@@ -4,8 +4,8 @@
   programs.kitty = {
     enable = true;
     settings = with config.design.color; {
-      background = "#151515";
-      background_opacity = 0.4;
+      background = "#ffffff";
+      background_opacity = 0.005;
       foreground = "#eeeeee";
       selection_foreground = "#151515";
       selection_background = "#eeeeee";
