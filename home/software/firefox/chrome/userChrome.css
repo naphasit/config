@@ -24,6 +24,10 @@
     --tab-selected-bgcolor: #fffffff10 !important;
   }
 
+  .titlebar-buttonbox-container {
+    display: none;
+  }
+
   #urlbar-background, #searchbar, .tab-background {
     border: 2px solid var(--toolbar-field-border-color) !important;
   }
