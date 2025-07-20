@@ -1,6 +1,7 @@
 {
   imports = [
     ./hardware.nix
+    ./network.nix
     ./nix.nix
     ./locale.nix
     ./security.nix
