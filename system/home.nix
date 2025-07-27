@@ -18,6 +18,7 @@
         ".mozilla"
         "Games"
         "Codes"
+	".ssh"
         ".local/share/PrismLauncher"
         {
           directory = ".local/share/Steam";
