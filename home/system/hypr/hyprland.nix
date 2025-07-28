@@ -44,6 +44,7 @@
           passes = 6;
           noise = 1.17e-2;
           contrast = 0.97;
+          popups = true;
 
           vibrancy = 0;
         };
@@ -92,7 +93,7 @@
 
       input = {
         kb_layout = "us, th";
-	kb_options =  "grp:alt_space_toggle";
+        kb_options = "grp:alt_space_toggle";
         follow_mouse = 1;
         sensitivity = 0;
         touchpad = { natural_scroll = false; };
@@ -145,6 +146,7 @@
       layerrule = [
         "blur, Bar"
         "ignorezero, Bar"
+        "blurpopups, Bar"
         "blur, AppLauncher"
         "ignorezero, AppLauncher"
         "blur, QuickSettings"
